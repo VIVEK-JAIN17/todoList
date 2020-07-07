@@ -1,0 +1,118 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: -webkit-linear-gradient(left, #b0b88d, #f2d492);
+    background-image: -moz-linear-gradient(left, #b0b88d, #f2d492);
+    background-image: -o-linear-gradient(left, #b0b88d, #f2d492);
+    background-image: linear-gradient(left, #b0b88d, #f2d492);
+    box-sizing: border-box;
+}
+
+h1{
+    padding: 3% 3% 2% 4%; 
+    font-weight: normal;
+    line-height: 2rem;
+    font-size: 1.8rem;
+    margin: 0;
+    background: #2980b9;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* The icon in h1 and the pencil icon */
+.fa-plus, span.pencil{
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    line-height: 2.5rem;
+    /* min-height: 2.5rem; */
+    height: fit-content;
+    font-size: 1.5rem;
+    padding: 0;
+    background: #fff;
+    color: #666;
+}
+
+/* For coloring alternate pairs of list differently */
+li:nth-child(even){
+    background: #f7f7f7;
+}
+
+span{
+    text-align: center;
+    display: inline-block;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+span.trash{
+    color: #fff;
+    background: #e74c3c;
+    height: 100%;
+    width: 0;
+    margin-right: 1.3rem;
+}
+
+span.pencil{
+    color: #2980b9;
+}
+
+/* Hovering effect for delete button */
+li:hover span{
+    width: 2.5rem;
+    opacity: 1;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+input{
+    width: 100%;
+    padding: 3.5%;
+    margin: 0;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    color: #2980b9;
+    background: #f7f7f7;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus{
+    color: #2980b9;
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+#container{
+    width: 100%;
+    margin: 5% auto;
+    padding: 0;
+    background: #f7f7f7;
+    box-shadow: 4px 3px rgba(0, 0, 0, 0);
+}
+
+.canceled{
+    color: #808080;
+    text-decoration: line-through;
+}
+
+.display{
+    display: none;
+}
+
+@media all and (min-width: 568px){
+    #container{
+        width: 400px;
+    }
+}
